@@ -5,7 +5,11 @@ use crate::{
             constraint_builder::{ConstraintBuilder},
         },
     }
-}
+};
+use eth_types::{Field};
+use halo2_proofs::{
+    arithmetic::FieldExt,
+};
 
 mod add_sub;
 
@@ -20,11 +24,11 @@ pub(crate) trait ExecutionGadget<F: FieldExt> {
 
 }
 
-#[derive(Clone, Debug)]
-pub(crate) struct ExecutionConfig<F> {
+// #[derive(Clone, Debug)]
+// pub(crate) struct ExecutionConfig<F> {
 
-}
+// }
 
-impl<F: Field> ExecutionConfig<F> {
+// impl<F: Field> ExecutionConfig<F> {
 
-}
+// }
